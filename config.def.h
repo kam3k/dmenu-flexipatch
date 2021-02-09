@@ -68,15 +68,15 @@ static const char *colors[][2] =
 	[SchemeMid]  = { "#eeeeee", "#770000" },
 	#endif // MORECOLOR_PATCH
 	#if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
-	[SchemeSelHighlight]  = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+	[SchemeSelHighlight]  = { "#c5c8c6", "#b294bb"},
+	[SchemeNormHighlight] = { "#b294bb", "#1d1f21" },
 	#endif // HIGHLIGHT_PATCH | FUZZYHIGHLIGHT_PATCH
 	#if HIGHPRIORITY_PATCH
 	[SchemeHp]   = { "#bbbbbb", "#333333" },
 	#endif // HIGHPRIORITY_PATCH
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 0;
+static unsigned int lines      = 5;
 #if GRID_PATCH
 /* -g option; if nonzero, dmenu uses a grid comprised of columns and lines */
 static unsigned int columns    = 0;
@@ -100,7 +100,7 @@ static const char worddelimiters[] = " ";
 
 #if BORDER_PATCH
 /* Size of the window border */
-static unsigned int border_width = 0;
+static unsigned int border_width = 1;
 #endif // BORDER_PATCH
 
 #if PREFIXCOMPLETION_PATCH
